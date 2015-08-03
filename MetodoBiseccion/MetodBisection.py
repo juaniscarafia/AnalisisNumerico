@@ -10,6 +10,7 @@ def EvaluateFunction(f,x):
 				'asin': math.asin, 'acos': math.acos,
 				'tan': math.tan, 'atan':math.atan,
 				'e': math.e, 'pi': math.pi, 'log': math.log,
+				'sqrt': math.sqrt,
 			}
 	return float (eval(f,dic,{'x':x}))
 
