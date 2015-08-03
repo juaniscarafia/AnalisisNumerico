@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>396</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Método Bisección</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icon/icon.png</normaloff>Icon/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>371</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="title">
+     <string>[ Ingresar ]</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QSplitter" name="splitter_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>351</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Función:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit"/>
+     </widget>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Cantidad:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2"/>
+     </widget>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Tolerancia:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3"/>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>150</y>
+      <width>370</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>351</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>[ Resultados ]</string>
+    </property>
+    <widget class="QSplitter" name="splitter_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>321</width>
+       <height>54</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QSplitter" name="splitter_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Raíz:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_4"/>
+     </widget>
+     <widget class="QSplitter" name="splitter_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Iteraciones:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5"/>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
