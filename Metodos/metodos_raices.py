@@ -27,7 +27,14 @@ class Solucion:
         print '\n'
 
 def funcion(f,x):
-    variable = {'x': x}   
+    variable =   {
+                'math':math, 'sin':math.sin,'cos':math.cos,
+                'asin': math.asin, 'acos': math.acos,
+                'tan': math.tan, 'atan':math.atan,
+                'e': math.e, 'pi': math.pi, 'log': math.log,
+                'sqrt': math.sqrt, 'exp':math.exp, 'ln':math.log1p
+            }
+    return float (eval(f,variable,{'x':x}))   
     try:
         return eval(f,{'math':math},variable)
     except SyntaxError:

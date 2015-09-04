@@ -4,8 +4,8 @@ from numpy import *
 # -----------------------------------------------
 # Parametros de entrada
 # -----------------------------------------------
-xmin= -13
-xmax= 0
+xmin= -100
+xmax= 100
 intervalos= 500
 # -----------------------------------------------
 
@@ -23,8 +23,12 @@ ymax= -inf
 
 
 # Funcion 'R'
-f= lambda x: ((x**2)/60) - (((x**3) * math.e**(-x))/12) - 2
-#(x**5 -1) * e**x +2
+f=lambda x: (x**5 -1) * e**x +2
+#lambda x: math.log1p(x) 
+#(x**2/60)-((x**3*e**-x)/12)-2
+#lambda x: (math.log1p(x) + (1 / x)) - 3
+#lambda x: (x**5 -1) * e**x +2
+#
 
 x= linspace(xmin, xmax, intervalos)
 y= f(x)

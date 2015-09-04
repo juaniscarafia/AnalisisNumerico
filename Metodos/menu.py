@@ -33,9 +33,7 @@ def opcion(msjentrada, msjerror, minopcion, maxopcion, tipodato):
 
 if __name__ == '__main__':
     
-    func_str = 'math.log1p(x) + (1 / x) - 3'
-    # 3) '((x**2)/60) - (((x**3) * math.e**(-x))/12) - 2'
-    # 4) 'abs((x**2)-4) + 2*x'
+    func_str = 'log1p(x) + (1 / x) - 3'
     seguir= True
     while seguir:
 
