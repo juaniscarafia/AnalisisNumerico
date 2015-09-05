@@ -16,5 +16,7 @@ else:
 		for c in range(F):
 			if not i == c:
 				m[c]=m[c]-(m[i]*m[c,i])
+	resultados = m[:,-1] #guarda la ultima columna en un vector
 
 print m
+print resultados
