@@ -23,7 +23,7 @@ ymax= -inf
 
 
 # Funcion 'R'
-f=lambda x: (x**5 -1) * e**x +2
+f=lambda x: log1p(x)
 #lambda x: math.log1p(x) 
 #(x**2/60)-((x**3*e**-x)/12)-2
 #lambda x: (math.log1p(x) + (1 / x)) - 3

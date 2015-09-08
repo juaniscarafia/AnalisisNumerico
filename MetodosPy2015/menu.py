@@ -35,7 +35,8 @@ if __name__ == '__main__':
     
     #func_str= '(x**5-1)*exp(x)-10'
     #func_str= '(x**5-1)*e**x-10'
-    func_str='log1p(x) + (1 / x) - 3'
+    #func_str='log1p(x) + (1 / x) - 3'
+    func_str = 'x**2-3*x+log(1+x)-5+sqrt(x)'
 
     seguir= True
     while seguir:

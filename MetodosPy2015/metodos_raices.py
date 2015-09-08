@@ -33,7 +33,7 @@ def funcion(f,x):
                 'asin': math.asin, 'acos': math.acos,
                 'tan': math.tan, 'atan':math.atan,
                 'e': math.e, 'pi': math.pi, 'log': math.log,
-                'sqrt': math.sqrt, 'exp':math.exp, 'log1p':math.log1p
+                'sqrt': math.sqrt, 'exp':math.exp, 'ln':math.log1p
             }
     return float (eval(f,variable,{'x':x}))   
     try:
