@@ -33,7 +33,8 @@ def opcion(msjentrada, msjerror, minopcion, maxopcion, tipodato):
 
 if __name__ == '__main__':
     
-    func_str = 'x**2-3*x+ln(1+x)-5+sqrt(x)'
+    func_str = '(x**5-1)*e**x+2'
+    #'x**2-3*x+ln(1+x)-5+sqrt(x)'
     #'(x**2/60)-((x**3)*(e**-x)/12)-2'
     #'log1p(x) + (1 / x) - 3'
     

@@ -8,20 +8,20 @@ def opcion(msjentrada, msjerror, minopcion, maxopcion, tipodato):
     maxcondicion = False
     while not salir:
         try: 
-            m= tipodato(raw_input(msjentrada))
+            m = tipodato(raw_input(msjentrada))
 
-            if minopcion == None:
+            if minopcion is None:
                 mincondicion= True
             else:
                 mincondicion= (m >= minopcion)
 
-            if maxopcion == None:
+            if maxopcion is None:
                 maxcondicion= True
             else:
                 maxcondicion= (m <= maxopcion)
 
         except ValueError:
-            salir= False
+            salir = False
             print msjerror
 
         salir= mincondicion and maxcondicion
@@ -33,12 +33,12 @@ def opcion(msjentrada, msjerror, minopcion, maxopcion, tipodato):
 
 if __name__ == '__main__':
     
-    func_str= '(x**5-1)*e**x+2'
-    #'(x**5-1)*exp(x)-10'
-    #func_str= '(x**5-1)*e**x-10'
-    #func_str='log1p(x) + (1 / x) - 3'
-    #func_str = 'x**2-3*x+log(1+x)-5+sqrt(x)'
-
+    func_str = '2-((10*x+20)/(x**2+4*x+5))'
+    #'(x**5-1)*e**x+2'
+    #'x**2-3*x+ln(1+x)-5+sqrt(x)'
+    #'(x**2/60)-((x**3)*(e**-x)/12)-2'
+    #'log1p(x) + (1 / x) - 3'
+    
     seguir= True
     while seguir:
 
@@ -90,18 +90,18 @@ if __name__ == '__main__':
             print '\n'
 
             if m == 1:
-                xi = opcion('Ingrese xi: ','Numero no valido. Ingrese nuevamente.', None, None, float)            
+                xi = opcion('Ingrese punto de inicio: ','Numero no valido. Ingrese nuevamente.', None, None, float)
                 tolerancia = opcion('Ingrese tolerancia: ','Numero no valido. Ingrese nuevamente.', None, None, float)
                 itermax = opcion('Ingrese iteraciones: ','Numero no valido. Ingrese nuevamente.', None, None, int)
-                print '\n'        
-                s = raices.Tangente(func_str,xi,tolerancia,itermax)
+                s = raices.Tangente(func_str, xi, tolerancia, itermax)
+
             elif m == 2:
-                xd = opcion('Ingrese xd: ','Numero no valido. Ingrese nuevamente.', None, None, float)
-                xi = opcion('Ingrese xi: ','Numero no valido. Ingrese nuevamente.', None, None, float)            
+                xi = opcion('Ingrese punto de inicio 1: ','Numero no valido. Ingrese nuevamente.', None, None, float)
+                xd = opcion('Ingrese punto de inicio 2: ','Numero no valido. Ingrese nuevamente.', None, None, float)
                 tolerancia = opcion('Ingrese tolerancia: ','Numero no valido. Ingrese nuevamente.', None, None, float)
                 itermax = opcion('Ingrese iteraciones: ','Numero no valido. Ingrese nuevamente.', None, None, int)
-                print '\n'
-                s = raices.Secante(func_str,xi, xd,tolerancia,itermax)
+                s = raices.Secante(func_str,xi,xd,tolerancia,itermax)
+                
             elif m == 3:
                 s = raices.PuntoFijo()
 
