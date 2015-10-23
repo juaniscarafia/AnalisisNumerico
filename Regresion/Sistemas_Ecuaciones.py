@@ -37,9 +37,10 @@ def GaussJordan(m):
                     m[c]=m[c]-(m[i]*m[c,i])
                     contador += 1
         resultados = m[:,-1] #guarda la ultima columna en un vector
+        #resultados = resultados[::-1] #Invertir lista
     sol = Solucion()
     sol.incognita = resultados
-    sol.iteraciones = contador
+    #sol.iteraciones = contador
     return sol
 
 if __name__ == '__main__':

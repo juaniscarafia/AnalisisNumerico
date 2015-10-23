@@ -2,7 +2,7 @@ import numpy as np
 
 x = np.array([0,1,3,4,6], dtype = float)
 
-y = np.array([8,5,6,4,3], dtype = float)
+y = np.array([1,3,7,9,13], dtype = float)
 
 class Solucion:
     def __init__(self, valores, cc):
@@ -34,7 +34,7 @@ def lineal(x, y):
 			sr = sr + (((a1 * x[i]) + a0 - y[i]) ** 2)
 			if st != 0:
 				r = (np.sqrt(abs((st - sr) / st))) * 100
-				sol = Solucion([a1, a0], r)
+				sol = Solucion([a0, a1], r)
 				return sol
 
 
@@ -42,10 +42,8 @@ if __name__ == '__main__':
     seguir= True
     while seguir:
         print """Seleccione Tipo de metodo:
-               1- Regresion Lineal
-               2- Coming Soon
-
-               3- Salir"""
+               1 - Regresion Lineal
+               2 - Salir"""
         try:
             n = int(raw_input('Opcion: '))
         except ValueError:
